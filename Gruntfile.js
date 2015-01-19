@@ -138,7 +138,8 @@ module.exports = function(grunt) {
 					'assets/css/main.min.css',
 					'assets/js/scripts.min.js',
 					'templates/*.php',
-					'*.php'
+					'*.html',
+					'**/*.php'
 				]
 			}
 		}
@@ -149,7 +150,7 @@ module.exports = function(grunt) {
 		'dev'
 	]);
 	grunt.registerTask('dev', [
-		//'jshint',
+		'jshint',
 		'sass:dev',
 		//'autoprefixer:dev',
 		//'uglify',
