@@ -3,6 +3,7 @@ $case-description-global-margin-bottom: 30px;
 
 .case-description {
 	position: relative;
+	@include rem('margin-bottom', 40px);
 	@include rem('padding', 40px);
 	background: $case-description-bg;
 

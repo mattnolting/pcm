@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 <div id="case-single" class="case-single">
 	<div class="row">
-		<div class="col-md-8">
+		<main class="col-md-8" role="main">
 			<header class="page-header">
 				<div class="row">
 					<div class="col-sm-6 col-md-8">
@@ -12,12 +12,6 @@
 							<a href="#" class="link">Chat with Support&nbsp;<i class="fa fa-comments"></i></a>
 						</div>
 					</div>
-				</div>
-				<div class="change-log">
-					<span class="filed-on">Filed on <b>12/11/14</b> @ <b>11:12am</b> <i>by </i><a href="#"><b>Allie Jacobs</b></a></span>
-					<span class="sep">|</span>
-					Assigned to <a href="#"><b>Kyle Benson</b></a>, Red Hat Support
-					<a href="#" class="block">Premium Support Level</a>
 				</div>
 				<section class="filters">
 					<div class="row">
@@ -54,10 +48,10 @@
 
 					<section class="config-options">
 						<div class="row">
-							<div class="col-sm-4 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<div class="label">Product</div>
 							</div>
-							<div class="col-sm-3 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<select name="" id="" place>
 									<option value="" disabled selected>Priority Select</option>
 									<option value="">Low Priority</option>
@@ -67,10 +61,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-4 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<div class="label">Product Version</div>
 							</div>
-							<div class="col-sm-3 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<select name="" id="" place>
 									<option value="" disabled selected>Priority Select</option>
 									<option value="">Low Priority</option>
@@ -80,10 +74,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-4 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<div class="label">Related Case ID</div>
 							</div>
-							<div class="col-sm-3 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<select name="" id="" place>
 									<option value="" disabled selected>Priority Select</option>
 									<option value="">Low Priority</option>
@@ -93,10 +87,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-4 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<div class="label">Case Group</div>
 							</div>
-							<div class="col-sm-3 col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<select name="" id="" place>
 									<option value="" disabled selected>Priority Select</option>
 									<option value="">Low Priority</option>
@@ -106,18 +100,55 @@
 							</div>
 						</div>
 					</section>
-				</div>
-				<div class="row actions">
-					<div class="col-xs-12">
-						<button class="btn btn-accent">Save Changes</button>
-						<button class="btn btn-open">Cancel</button>
+					<div class="row actions">
+						<div class="col-xs-12">
+							<button class="btn btn-accent">Save Changes</button>
+							<button class="btn btn-open">Cancel</button>
+						</div>
 					</div>
 				</div>
 			</section>
-		</div>
 
+			<section class="case-discussion">
+				<header>
+					<h2>Case Discussion</h2>
+					<label for="email-notifications">Send Email Notifications to</label>
+					<input class="email-notification margin" placeholder="type ahead.." type="text" name="email-notifications" />
+					<div class="block">
+						<textarea class="comment" placeholder="Add a comment..." type="text" name="comment"></textarea>
+					</div>
+					<div class="btn btn-open">Attach a file</div>
+					No file chosen
+				</header>
+				<article class="comment">
+					<h4><span class="author">Leslie Hinson, Red Hat Support</span><span class="date">&nbsp;12 Dec 2014</span>&nbsp;at<time>&nbsp;3:17pm</time></h4>
+					<blockquote class="comment">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
+					</blockquote>
+				</article>
+				</header>
+				<article class="comment">
+					<h4>
+						<span class="avatar">
+							<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjIMQWD7oVOZtHb4FA9aqJg0bpf2jlGu_BXghkJ-yA7zvrEG8P" alt="Person" />
+						</span>
+						<span class="author">Leslie Hinson, Red Hat Support</span><span class="date light">&nbsp;12 Dec 2014</span>&nbsp;at<time class="light">&nbsp;3:17pm</time></h4>
+					<blockquote class="comment">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
+					</blockquote>
+					</header>
+					<article class="comment">
+						<h4><span class="author">Leslie Hinson, Red Hat Support</span><span class="date">&nbsp;12 Dec 2014</span>&nbsp;at<time>&nbsp;3:17pm</time></h4>
+						<blockquote class="comment">
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
+						</blockquote>
+					</article>
+				</article>
+			</section>
+		</main>
 
-		<div class="col-md-4">
+		<aside class="col-md-4">
 			<section class="recommendations">
 <!--				<div class="spinner spinner-lg spinner-inline"></div>-->
 				<h3 class="title blue">Here Are Some Possible Solutions<i class="fa fa-flash section-icon"></i></h3>
@@ -128,7 +159,7 @@
 					<p class="article-content">
 						<a href="#">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numqua...</a>
 					</p>
-					<footer>
+
 					<footer>
 						<span class="user-action">Updated&nbsp;<date><b>06/22/14</b></date>&nbsp;at&nbsp;<time><b>4:31pm</b></time></span>
 					</footer>
@@ -141,7 +172,7 @@
 						<p class="article-content">
 							<a href="#">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numqua...</a>
 						</p>
-						<footer>
+
 						<footer>
 							<span class="user-action">Updated&nbsp;<date><b>06/22/14</b></date>&nbsp;at&nbsp;<time><b>4:31pm</b></time></span>
 						</footer>
@@ -154,12 +185,23 @@
 					<p class="article-content">
 						<a href="#">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numqua...</a>
 					</p>
+
 					<footer>
 						<span class="user-action">Updated&nbsp;<date><b>06/22/14</b></date>&nbsp;at&nbsp;<time><b>4:31pm</b></time></span>
 					</footer>
 				</article>
 			</section>
-		</div>
+			<section class="case-escalation">
+				<div>
+					<h3>
+						Need to raise a concern to Red Hat Support
+						management? <a class="link" href="#">Learn More</a>
+					</h3>
+				</div>
+<!--				<a href="#">Request escalation</a>-->
+				<a class="btn btn-light" href="#">Request escalation</a>
+			</section>
+		</aside>
 	</div>
 </div>
 

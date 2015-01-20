@@ -5,13 +5,12 @@
 	<title>Page Title</title>
 
 	<!-- Comment these out to switch to chromed version -->
-	<!--	<link href="/chrome_themes/nimbus/css/chrometwo.css" rel="stylesheet" />-->
-	<!--	<script type="text/javascript" src="/webassets/avalon/j/lib/require.js"></script>-->
+<!--		<link href="/chrome_themes/nimbus/css/chrometwo.css" rel="stylesheet" />-->
+<!--		<script type="text/javascript" src="/webassets/avalon/j/lib/require.js"></script>-->
 	<!--	-->
 
 	<!-- Comment these out to switch to chromed version -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -31,7 +30,8 @@
 		<ul>
 			<li><a href="/public/pcm">Home</a></li>
 			<li><a href="/public/pcm/views/list-filters.php">Case List</a></li>
-			<li><a href="/public/pcm/views/new-case.php">New Case</a></li>
+			<li><a href="/public/pcm/views/case-single.php">Case Single</a></li>
+			<li><a href="/public/pcm/views/case-new.php">New Case</a></li>
 		</ul>
 	</nav>
 

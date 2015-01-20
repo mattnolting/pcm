@@ -16,6 +16,7 @@
 @import "elements/links";
 @import "elements/typography";
 @import "elements/articles";
+@import "elements/aside";
 
 
 // Components
@@ -27,6 +28,8 @@
 @import "components/page-header";
 @import "components/nav";
 @import "components/recommendations";
+@import "components/case-discussion";
+@import "components/case-escalation";
 @import "components/severity-level";
 @import "components/spinner";
 @import "components/filters";

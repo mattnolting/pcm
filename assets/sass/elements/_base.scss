@@ -1,7 +1,12 @@
 html { font-size: 100%; }
-*:hover, a:hover {
+*:hover, *:focus, *:active {
 	text-decoration: none;
+	outline: 0;
 }
+[class^="col-md"] {
+	@include transition(.2s);
+}
+
 body {
 	font-size: 90%;
 //	@include media-query (sm) { font-size: 90%; }
@@ -29,6 +34,9 @@ body {
 	}
 }
 
+section > header {
+	margin-bottom: $header_bottom_margin;
+}
 
 // Make this a component
 //==================================================================*/
@@ -61,6 +69,10 @@ $box-dark-link-size: 18px;
 }
 
 
-.block-link {
+.block, .block-link {
 	display: block;
+
+	input, textarea {
+		width: 100%;
+	}
 }
